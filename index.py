@@ -1,7 +1,6 @@
-
-
 from flask import Flask, render_template, request, jsonify
 from color_ml import predict
+import os
 
 app = Flask(__name__)
 
@@ -21,4 +20,5 @@ def color_predict():
 	return jsonify(response)
 
 if __name__ == "__main__":
-	app.run(port=8000, debug=True)
+	port = int(os.environ.get("PORT", 8000))
+	app.run(host="localhost", port=port)
