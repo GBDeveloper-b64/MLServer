@@ -21,4 +21,4 @@ def color_predict():
 
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 8000))
-	app.run(host="localhost", port=port)
+	app.run(port=port)
