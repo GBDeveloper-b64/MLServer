@@ -1,0 +1,37 @@
+body {
+	display: flex;
+	background-color: #FF7B00;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+p {
+	margin: 0;
+	font-weight: bold;
+}
+
+@keyframes background-transition {
+	0% {
+		background-color: #FFF;
+	}
+
+	50% {
+		background-color: #000;
+	}
+
+	100% {
+		background-color: #FFF;
+	}
+}
